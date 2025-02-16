@@ -10,11 +10,11 @@ st.set_page_config(page_title='Prediction of disease outbreaks',layout='wide',pa
 
 working_dir=os.path.dirname(os.path.abspath(__file__))
 
-diabetes_model=pickle.load(open(r"C:\Users\SHYAM PRASAD\OneDrive\Documents\PREDICTIONS\training_models\diabetes_model.sav",'rb'))
+diabetes_model=pickle.load(open(r"C:\Users\SHYAM PRASAD\OneDrive\Documents\PREDICTIONS\app\diabetes_model.sav",'rb'))
 
-heart_disease_model=pickle.load(open(r"C:\Users\SHYAM PRASAD\OneDrive\Documents\PREDICTIONS\training_models\heart_disease_model.sav",'rb'))
+heart_disease_model=pickle.load(open(r"C:\Users\SHYAM PRASAD\OneDrive\Documents\PREDICTIONS\app\heart_disease_model.sav",'rb'))
 
-parkinsons_model=pickle.load(open(r"C:\Users\SHYAM PRASAD\OneDrive\Documents\PREDICTIONS\parkinsons_model.sav",'rb'))
+parkinsons_model=pickle.load(open(r"C:\Users\SHYAM PRASAD\OneDrive\Documents\PREDICTIONS\app\parkinsons_model.sav",'rb'))
 
 with st.sidebar:
     selected=option_menu('Prediction of Disease Outbreaks System',
